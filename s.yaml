@@ -5,6 +5,10 @@ access: "default"  #  秘钥别名
 services:
   fc-deploy-test: #  服务名称
     component: devsapp/fc  # 组件名称
+    actions: # 自定义执行逻辑
+      pre-deploy: # 在deploy之前运行
+        - run: npm install --registry=https://registry.npm.taobao.org
+          path: ./code # 命令行运行的路径
     props: #  组件的属性值
       region: cn-hangzhou
       service:
