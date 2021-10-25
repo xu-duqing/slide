@@ -1,4 +1,4 @@
-## Serverless 实践 XX 
+## Serverless 实践
 Note: xx
 
 - - -
