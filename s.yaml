@@ -8,7 +8,7 @@ services:
     actions: # 自定义执行逻辑
       pre-deploy: # 在deploy之前运行
         - run: npm install --registry=https://registry.npm.taobao.org
-          path: ./code # 命令行运行的路径
+          path: ./ # 命令行运行的路径
     props: #  组件的属性值
       region: cn-hangzhou
       service:
@@ -19,7 +19,7 @@ services:
         name: http-trigger-nodejs12
         description: this is a test
         runtime: nodejs12
-        codeUri: ./code
+        codeUri: ./
         # ossBucket:
         # ossKey:  # conflict with codeUri
         handler: index.handler
