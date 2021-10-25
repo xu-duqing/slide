@@ -1,0 +1,25 @@
+{
+  "name": "slide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xu-duqing/slide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xu-duqing/slide/issues"
+  },
+  "homepage": "https://github.com/xu-duqing/slide#readme",
+  "dependencies": {
+    "@serverless-devs/fc-http": "0.0.5",
+    "koa": "^2.13.0",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0"
+  }
+}

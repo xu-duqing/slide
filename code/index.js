@@ -1,47 +1,19 @@
-var getRawBody = require('raw-body');
-var getFormBody = require('body/form');
-var body = require('body');
+const serverless = require('@serverless-devs/fc-http');
+const Koa = require('koa')
+const route = require('koa-route')
+const fs = require('fs')
+const path = require('path');
+const serve = require('koa-static')
 
+const app = new Koa()
 
-/*
-To enable the initializer feature (https://help.aliyun.com/document_detail/156876.html)
-please implement the initializer function as below：
-exports.initializer = (context, callback) => {
-  console.log('initializing');
-  callback(null, '');
-};
-*/
-
-exports.handler = (req, resp, context) => {
-    console.log('hello world');
-
-    var params = {
-        path: req.path,
-        queries: req.queries,
-        headers: req.headers,
-        method : req.method,
-        requestURI : req.url,
-        clientIP : req.clientIP,
-    }
-
-    getRawBody(req, function(err, body) {
-        for (var key in req.queries) {
-          var value = req.queries[key];
-          resp.setHeader(key, value);
-        }
-        params.body = body.toString();
-        resp.send(JSON.stringify(params, null, '    '));
-    });
-
-    /*
-    getFormBody(req, function(err, formBody) {
-        for (var key in req.queries) {
-          var value = req.queries[key];
-          resp.setHeader(key, value);
-        }
-        params.body = formBody;
-        console.log(formBody);
-        resp.send(JSON.stringify(params));
-    });
-    */
+const main = ctx => {
+  ctx.response.type = 'html'
+  ctx.response.code = 200
+  ctx.response.body = fs.readFileSync('/code/src/dist/index.html')
 }
+
+app.use(serve(path.join(__dirname, 'src')))
+app.use(route.get('/'), main)
+
+exports.handler = serverless(app)
