@@ -1,0 +1,19 @@
+{
+  "statefulConfig": {
+    "triggerName": "httpTrigger",
+    "description": "",
+    "triggerId": "d3592ba6-6f96-4c9c-8bed-482cfc8d3fab",
+    "sourceArn": null,
+    "triggerType": "http",
+    "invocationRole": null,
+    "qualifier": null,
+    "triggerConfig": {
+      "methods": [
+        "GET"
+      ],
+      "authType": "anonymous"
+    },
+    "createdTime": "2021-10-25T09:26:10Z",
+    "name": "httpTrigger"
+  }
+}

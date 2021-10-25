@@ -1,0 +1,34 @@
+{
+  "statefulConfig": {
+    "functionId": "2ddf0906-8f54-41a7-9aa8-baaeb4507d8a",
+    "functionName": "http-trigger-nodejs12",
+    "description": "this is a test",
+    "runtime": "nodejs12",
+    "handler": "index.handler",
+    "timeout": 60,
+    "initializer": "",
+    "initializationTimeout": 3,
+    "codeSize": 622,
+    "codeChecksum": "4687071748045187286",
+    "memorySize": 128,
+    "environmentVariables": {},
+    "createdTime": "2021-10-25T09:26:10Z",
+    "instanceConcurrency": 1,
+    "instanceSoftConcurrency": null,
+    "customContainerConfig": null,
+    "caPort": null,
+    "instanceType": "e1",
+    "layers": null,
+    "instanceLifecycleConfig": {
+      "preFreeze": {
+        "handler": "",
+        "timeout": 3
+      },
+      "preStop": {
+        "handler": "",
+        "timeout": 3
+      }
+    },
+    "name": "http-trigger-nodejs12"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "statefulConfig": {
+    "serviceName": "fc-deploy-service",
+    "description": "demo for fc-deploy component",
+    "role": "",
+    "logConfig": {
+      "project": "",
+      "logstore": "",
+      "enableRequestMetrics": false,
+      "enableInstanceMetrics": false,
+      "logBeginRule": null
+    },
+    "serviceId": "3bfc0690-556d-47bd-9a53-d81e6e76747f",
+    "createdTime": "2021-10-25T09:26:09Z",
+    "vpcConfig": {
+      "vpcId": "",
+      "vSwitchIds": [],
+      "securityGroupId": "",
+      "role": ""
+    },
+    "internetAccess": true,
+    "nasConfig": {
+      "userId": -1,
+      "groupId": -1,
+      "mountPoints": []
+    },
+    "vendorConfig": null,
+    "tracingConfig": {
+      "type": null,
+      "params": null,
+      "jaegerConfig": null
+    },
+    "name": "fc-deploy-service"
+  }
+}

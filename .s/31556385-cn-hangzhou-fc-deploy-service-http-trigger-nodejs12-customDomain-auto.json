@@ -1,0 +1,14 @@
+{
+  "domainName": "http-trigger-nodejs12.fc-deploy-service.31556385.cn-hangzhou.fc.devsapp.net",
+  "protocol": "HTTP",
+  "routeConfigs": [
+    {
+      "path": "/*",
+      "methods": [
+        "GET"
+      ],
+      "serviceName": "fc-deploy-service",
+      "functionName": "http-trigger-nodejs12"
+    }
+  ]
+}
