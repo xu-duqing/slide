@@ -10,7 +10,7 @@ services:
         - run: npm install --registry=https://registry.npm.taobao.org
           path: ./ # 命令行运行的路径
     props: #  组件的属性值
-      region: cn-hangzhou
+      region: cn-hongkong
       service:
         name: fc-deploy-service
         description: 'demo for fc-deploy component'
