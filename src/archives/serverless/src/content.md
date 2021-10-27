@@ -144,7 +144,7 @@ exports.handler = serverless(app)
 
 - - -
 
-## 基于 Github Actions 的 CI / CD
+## 急于 Github Actions 的 CI / CD
 <!-- .slide: data-background="#FFF000" -->
 
 ```yaml
