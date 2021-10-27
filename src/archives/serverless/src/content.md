@@ -26,7 +26,7 @@ Note: 这一切决定了前后端必须要分离 BFF 层应运而生
 
 > Java <=> NodeJs(BFF) <=> HTML
 
-原本只是想分离,没想到服务都要自己写了
+原本只是想分离,没想到服务都要自己写了.怎么就全站了勒?
 
 <!-- .slide: data-background="#FFF000" -->
 
@@ -77,7 +77,7 @@ Note: 随着通信技术的进步已经微服务概念, 当一个服务被拆分
 
 <!-- .slide: data-background="#FFF000" -->
 
-![](https://this-is-my-images.oss-cn-beijing.aliyuncs.com/img/20211026210822.png)
+<img src='https://this-is-my-images.oss-cn-beijing.aliyuncs.com/img/20211026210822.png' width=1200 />
 
 - - -
 ## Serverless 当前发展情况
@@ -181,6 +181,8 @@ jobs:
 ### 薅羊毛技术总结
 <!-- .slide: data-background="#FFF000" -->
 
+- 默认生成的函数模版没有太大的实用价值
+- 配合 `@serverless-devs/fc-http`支持 koa / express 等会有很大的价值
 - 域名是最大的投资
 - API 网关的配置稍微麻烦一点, 注意全路径匹配以及参数透传
 - CI / CD 选择香港机房成功率高一点
@@ -199,4 +201,4 @@ http://client.wacai.info/mozi/faas/service
 ### 感谢大家的时间
 <!-- .slide: data-background="#FFF000" -->
 
-二维码
+<img src='https://this-is-my-images.oss-cn-beijing.aliyuncs.com/img/20211027100818.png' width=300 />
